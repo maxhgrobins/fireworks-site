@@ -14,18 +14,53 @@ body {
 	height:100%;
 	width:100%;
 }
+
+
+.topnav {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	z-index: 100;
+	width:100%;
+	margin-top:121px;
+	background: url("nightsky.gif");
+	background-size:10%;
+	background-attachment: fixed;
+}
+
+.topnav a {
+	display: block;
+	color: #00ffec;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.topnav a:hover {
+	color: #ff3300;
+	background-color:#ffffff
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .fworks {
 	text-align: center;
 	font-size: 100px;
 	font-weight: bold;
 	color: #00ffec;
+	width: 100%
 }
 .bottomfworks {
 	text-align: center;
 	vertical-align: bottom;
 	font-size: 100px;
 	font-weight: bold;
-	color: #ff3300;
+	color: #FF0013;
 	transform: rotate(180deg);
 }
 
@@ -52,15 +87,98 @@ img{
 	padding:30px;
 }
 
-.intro{
-	float:right;
+.desc{
+	float:bottom;
 	font-weight: bold;
 	background-color:#ADADAD;
 	padding:20px;
 	border-style: outset;
 	border-width: 10px;
 	font-size: 30px;
-	color: #ff3300;
-	text-align:left;
+	color: #FF0013;
 	width:20%
 }
+
+.text{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #FF0013;
+	border-width: 10px;
+	padding:20px;
+	margin-left:30%;
+	margin-right:30%;
+}
+
+.column {
+	float:left;
+	padding:10px;
+}
+
+.column.side {
+	width:25%;
+	
+}
+
+
+.pagebox {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+.cell {
+	display: flex;
+	box-sizing: border-box;
+	flex-grow: 1;
+	overflow: hidden;
+	list-style: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0013;
+	border-style: outset;
+	border-width: 10px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.lhccell {
+	display: flex;
+	box-sizing: border-box;
+	flex-grow: 1;
+	overflow: hidden;
+	list-style: none;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FF0013;
+	border-style: outset;
+	border-width: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagebox > .cell  { width: 25%; }
+
+.l-images{
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	width:25%;
+	left:0%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.r-images{
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	width:25%;
+	right:0%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+	

@@ -1,0 +1,11 @@
+	<img src="gifs\fireworks\monument.gif" alt="monument" width="220">
+	<img src="gifs\lhc\speedyboy.gif" alt="speedyboy" width="250">
+	<img src="gifs\fireworks\rainbow.gif" alt="rainbow">
+	<img src="gifs\lhc\mapthing.gif" alt="mapthing" width="250">
+	<img src="gifs\fireworks\shooting.gif" alt="shooting" width="250">
+	<img src="gifs\fireworks\boombang.gif" alt="boombang" width="250">
+	<img src="gifs\lhc\collision.gif" alt="collision" width="250">
+	<img src="gifs\lhc\blam.gif" alt="blam" width="250">
+	<img src="gifs\lhc\wobbly.gif" alt="wobbly" width="250">
+	<img src="gifs\fireworks\static.gif" alt="static" width="250">
+	<img src="gifs\fireworks\long.gif" alt="long" width="250">
