@@ -15,6 +15,10 @@ body {
 	width:100%;
 }
 
+.page-wrapper{
+	min-height:100%;
+}
+
 
 .topnav {
 	display: flex;
@@ -22,10 +26,25 @@ body {
 	position: absolute;
 	z-index: 100;
 	width:100%;
-	margin-top:121px;
+	margin-top:120px;
 	background: url("nightsky.gif");
 	background-size:10%;
 	background-attachment: fixed;
+}
+
+.truth 	 {
+	position: absolute;
+	margin-top:130px;
+	display: block;
+	color: #00ffec;
+	text-decoration: none;
+	z-index: 150;
+	right:0;
+}
+
+.truth a:hover {
+	color: #ff3300;
+	background-color:#ffffff
 }
 
 .topnav a {
@@ -55,13 +74,44 @@ body {
 	color: #00ffec;
 	width: 100%
 }
-.bottomfworks {
-	text-align: center;
-	vertical-align: bottom;
-	font-size: 100px;
+
+.intro{
+	margin-top:20px;
+	font-size: 20px;
 	font-weight: bold;
 	color: #FF0013;
+	border-color:#00FFEC;
+	border-style: double;
+	border-width: 10px;
+	text-align: center;
+	padding:5px;
+}
+
+
+footer {
+	clear:both;
+	width:100%;
+	position:relative;
+	left:0;
+	bottom:0;
+	color: #FF0013;
+	font-size: 100px;
+	font-weight: bold;
 	transform: rotate(180deg);
+	text-align: center;
+}
+
+.footer {
+	clear:both;
+	width:100%;
+	position:absolute;
+	left:0;
+	bottom:0;
+	color: #FF0013;
+	font-size: 100px;
+	font-weight: bold;
+	transform: rotate(180deg);
+	text-align: center;
 }
 
 .box{
@@ -124,8 +174,18 @@ img{
 .pagebox {
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: 300px;
-	margin-right: 300px;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.linkbox {
+	display: flex;
+	position:relative;
+	flex-wrap:wrap;
+	margin-left: 10%;
+	margin-right: auto;
+	width:50%;
+	z-index:150;
 }
 
 .cell {
@@ -142,6 +202,8 @@ img{
 	text-align: center;
 	justify-content: center;
 	align-items: center;
+	padding-left:5px;
+	padding-right:5px;
 }
 .lhccell {
 	display: flex;
@@ -157,28 +219,62 @@ img{
 	justify-content: center;
 	align-items: center;
 }
-
-.pagebox > .cell  { width: 25%; }
-
-.l-images{
-	position: absolute;
+.linkcell {
 	display: flex;
-	flex-wrap: wrap;
-	width:25%;
-	left:0%;
+	box-sizing: border-box;
+	flex-grow: 1;
+	overflow: hidden;
+	list-style: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0013;
+	border-style: double;
+	border-color:#00ffec;
+	border-width: 10px;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
+	padding:5px;
 }
 
-.r-images{
-	position: absolute;
+.linkcell a {
+	display: block;
+	color: #00ffec;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.linkcell a:hover {
+	color: #ff3300;
+	background-color:#ffffff
+}
+
+.linkbox > .linkcell  { width: 50%; }
+.pagebox > .cell  { width: 25%; }
+
+.limages{
+	position:fixed;
 	display: flex;
 	flex-wrap: wrap;
-	width:25%;
-	right:0%;
+	flex-direction: column;
+	max-width:20%;
+	height:auto;
+	left:0%;
 	text-align: center;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rimages{
+	position:fixed;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	max-width:20%;
+	right:5%;
+	text-align: center;
+	justify-content: space-between;
 	align-items: center;
 }
 	
