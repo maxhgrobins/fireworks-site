@@ -27,26 +27,12 @@ body {
 	position: absolute;
 	z-index: 100;
 	width:100%;
-	margin-top:120px;
+	margin-top:240px;
 	background: url("nightsky.gif");
 	background-size:10%;
 	background-attachment: fixed;
 }
 
-.truth 	 {
-	position: absolute;
-	margin-top:130px;
-	display: block;
-	color: #00ffec;
-	text-decoration: none;
-	z-index: 150;
-	right:0;
-}
-
-.truth a:hover {
-	color: #ff3300;
-	background-color:#ffffff
-}
 
 .topnav a {
 	display: block;
@@ -62,6 +48,22 @@ body {
 }
 
 
+.truth 	 {
+	position: absolute;
+	margin-top:253px;
+	display: block;
+	color: #00ffec;
+	text-decoration: none;
+	z-index: 150;
+	right:0;
+}
+
+.truth a:hover {
+	color: #ff3300;
+	background-color:#ffffff
+}
+
+
 .row:after {
   content: "";
   display: table;
@@ -69,11 +71,10 @@ body {
 }
 
 .fworks {
+	padding:0;
+	margin-top:0;
 	text-align: center;
-	font-size: 100px;
-	font-weight: bold;
-	color: #00ffec;
-	width: 100%
+	
 }
 
 .intro{
@@ -255,7 +256,7 @@ img{
 .pagebox > .cell  { width: 25%; }
 
 .limages{
-	position:fixed;
+	position:absolute;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -268,7 +269,7 @@ img{
 }
 
 .rimages{
-	position:fixed;
+	position:absolute;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
