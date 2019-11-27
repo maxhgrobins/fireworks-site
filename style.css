@@ -187,7 +187,7 @@ img{
 	flex-grow: 1;
 	overflow: hidden;
 	list-style: none;
-	font-size: 20px;
+	font-size: 1.5vw;
 	font-weight: bold;
 	color: #FF0013;
 	border-style: outset;
@@ -265,9 +265,36 @@ img{
 	flex-wrap: wrap;
 	flex-direction: column;
 	max-width:20%;
+	height: auto;
 	right:5%;
 	text-align: center;
 	justify-content: space-between;
 	align-items: center;
 }
-	
+
+.hoverbox {
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background: #000000;
+	border-style: solid;
+	border-color:#FFFFFF;
+	border-width: 6px;
+	text-align: center;
+	padding:9px;
+	position: absolute;
+	position: fixed;
+	right: 0;
+	top: 240px;
+	z-index:200;
+}
+
+.cell a {
+	color: #00ffec;
+	text-decoration: none;
+}
+
+.cell a:hover {
+	color: #ff3300;
+	background-color:#ffffff
+}
