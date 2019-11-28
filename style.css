@@ -2,6 +2,8 @@ body, html {
   height: 100%;
 }
 
+html {height:100;}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -14,9 +16,25 @@ body {
 	height:100%;
 	width:100%;
 	font-family: "Times New Roman", Times, serif;
-	min-height:100%; padding:0; margin:0; position:relative;
+	min-height:100%; padding:0; margin:0;
 }
 
+.footer {
+   	clear:both;
+	width:100%;
+	position:relative;
+	color: #FF0013;
+	font-size: 100px;
+	font-weight: bold;
+	transform: rotate(180deg);
+	text-align: center;
+	height: 215px;
+	margin-top: -215px;
+}
+
+.allbutfooter{
+	min-height:100%; padding:0; margin:0; margin-bottom:256px
+}
 
 .page-wrapper{
 	min-height:100%;
@@ -94,18 +112,7 @@ body {
 
 
 
-footer {
-   	clear:both;
-	width:100%;
-	position:relative;
-	left:0;
-	bottom:0;
-	color: #FF0013;
-	font-size: 100px;
-	font-weight: bold;
-	transform: rotate(180deg);
-	text-align: center;
-}
+
 
 .box{
 	position:absolute;
@@ -175,10 +182,8 @@ img{
 	display: flex;
 	position:relative;
 	flex-wrap:wrap;
-	margin-left: 10%;
-	margin-right: auto;
-	width:50%;
 	z-index:150;
+	padding: 20px;
 }
 
 .cell {
@@ -204,21 +209,23 @@ img{
 	flex-grow: 1;
 	overflow: hidden;
 	list-style: none;
-	font-size: 18px;
+	font-size: 1.3vw;
 	font-weight: bold;
 	color: #FF0013;
 	border-style: outset;
 	border-width: 10px;
 	justify-content: center;
 	align-items: center;
+	padding: 0.7vw;
 }
 .linkcell {
 	display: flex;
 	box-sizing: border-box;
 	flex-grow: 1;
+	flex-wrap: wrap;
 	overflow: hidden;
 	list-style: none;
-	font-size: 20px;
+	font-size: 1.5vw;
 	font-weight: bold;
 	color: #FF0013;
 	border-style: double;
@@ -242,6 +249,16 @@ img{
 	color: #ff3300;
 	background-color:#ffffff
 }
+
+.linkgifs {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+	padding-left:10%;
+	padding-right:10%
+}
+
 
 .linkbox > .linkcell  { width: 50%; }
 .pagebox > .cell  { width: 25%; }
