@@ -111,10 +111,12 @@ body {
 
 
 
+.invert {
+	filter:invert(100%);
+}
 
 
-
-.box{
+/*.box{
 	position:absolute;
 	position:fixed;
 	background-position: center;
@@ -131,7 +133,7 @@ body {
 	background-size:10%;
 	background-attachment: fixed;
 	mix-blend-mode: exclusion;
-}
+}*/
 
 img{
 	padding:30px;
@@ -203,6 +205,7 @@ img{
 	padding-left:5px;
 	padding-right:5px;
 }
+
 .lhccell {
 	display: flex;
 	box-sizing: border-box;
