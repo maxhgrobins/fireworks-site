@@ -96,13 +96,18 @@
 	<img src="logos/artsfunding.png" width="200" align="right" ></img>
 </div>
 
+<script src="jquery-3.5.1.min.js"></script>
+
 <script type="text/javascript">
-	document.addEventListener("pointerdown", function(){
-  document.documentElement.classList.toggle('invert');
+
+$(document.body).click( function() {
+	
+	$('body').toggleClass('invertbody');
+	$('.allbutfooter').toggleClass('invert');
+	$('.footer').toggleClass('invert');
+
 });
-	document.addEventListener("pointerup", function(){
-  document.documentElement.classList.toggle('invert');
-});
+
 </script>
 
 </html>
